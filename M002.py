@@ -55,6 +55,9 @@ print(text.upper())  # Schreibe den gesamten Text in GROßBUCHSTABEN
 
 print(text.lower().count("e"))  # Mehrere Funktion aneinanderhängen
 
+# Die Länge eines Strings ausgeben
+print(len(text))
+
 #################################################################
 
 # Index
