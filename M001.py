@@ -34,3 +34,19 @@ listNamen()
 listNamen("T1")
 listNamen("T1", "T2")
 listNamen("T1", "T2", "T3", "T4", "T5")
+
+import os.path
+def file():
+	while True:
+		wra = input("Gib w, r oder a ein: ")
+		if wra not in ["w", "r", "a"]:
+			continue
+
+		if wra == "r":
+			if os.path.exists("File.txt"):
+				with open("File.txt", "r") as f:
+					for l in f.readlines():
+						print(l)
+		else:
+			with open("File.txt", wra) as f:
+				f.write("Erfolg")
